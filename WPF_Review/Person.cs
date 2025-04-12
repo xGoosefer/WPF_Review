@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media.Imaging;
 
 namespace WPF_Review
 {
@@ -11,6 +12,9 @@ namespace WPF_Review
        public List<Item> Inventory = new List<Item>();
         public string PersonName = "Anon";
         public int CurrentLocation = 0;
+        // Img local?
+      //  public string AvatarIconLocal = "Avatar.bmp";
+        public BitmapImage AvatarIcon = new BitmapImage(new Uri("Avatar.bmp", UriKind.Relative));
 
         public Person() 
         {

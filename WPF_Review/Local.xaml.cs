@@ -36,6 +36,10 @@ namespace WPF_Review
             ShowPlayerInfo();
             LocalName.Text = $"{window.regions[window.player.CurrentLocation].regionName}";
             LocalDescrip.Text = $"{window.regions[window.player.CurrentLocation].regionDescript}";
+            //if img
+      //      PlayerAvatar.Source = new BitmapImage(new Uri(window.player.AvatarIconLocal));
+            //if stored as bitmap
+            PlayerAvatar.Source = window.player.AvatarIcon;
         }
     }
 }
