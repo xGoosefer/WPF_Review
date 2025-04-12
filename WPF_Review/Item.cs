@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WPF_Review
 {
-    internal class Item
+    public class Item
     {
         public string ItemName;
         public string Description;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WPF_Review
 {
-    internal class Person
+    public class Person
     {
        public List<Item> Inventory = new List<Item>();
         public string PersonName = "Anon";

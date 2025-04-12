@@ -22,7 +22,7 @@ namespace WPF_Review
     /// </summary>
     public partial class MainWindow : Window
     {
-        Person player = new Person();
+        public Person player = new Person();
         public MainWindow()
         {
             InitializeComponent();
@@ -30,39 +30,15 @@ namespace WPF_Review
 
         private void MainGrid_Loaded(object sender, RoutedEventArgs e)
         {
-            SetPlayerName();
+            // used once for inital load
+            NavFrame.Navigate(new Start());
             
             //Output.Text += "\nThis is kittyotik (me when I lie)";
             //Output.Text += player.GetInventoryItem();
         }
 
-        private void SetPlayerName()
-        {
-            Output.Text = $"Chao! {player.PersonName} \n";
-            Output.Text += "Enter your name in the box below.";
-        }
+       
 
-        private void Submit_Click(object sender, RoutedEventArgs e)
-        {
-            if (Input.Text != "")
-            {
-                player.PersonName = Input.Text;
-                ShowPlayerInfo();
-            }
-            else
-            {
-                Output.Text = "No name entered, ok Anon!";
-            }
-        }
-
-        private void ShowPlayerInfo()
-        {
-            Output.Text = $"{player.PersonName}";
-        }
-
-        private void Input_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
+        
     }
 }
