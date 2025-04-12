@@ -9,16 +9,19 @@ namespace WPF_Review
     internal class Person
     {
        public List<Item> Inventory = new List<Item>();
+        public string PersonName = "Anon";
 
         public Person() 
         {
-            Inventory.Add(new Item());
+            Inventory.Add(new Item() { ItemName = "Map", Description = "Old map"});
+            Inventory.Add(new Item() { ItemName = "Pin", Description = "Has some street rats on it" });
+            Inventory.Add(new Item() { ItemName = "Photo", Description = "A dog with golden fur posed for this." });
         }
 
 
         public string GetInventoryItem()
         {
-            string output = "Inventory\n";
+            string output = "\n Your Inventory\n";
 
             foreach (Item item in Inventory)
             {

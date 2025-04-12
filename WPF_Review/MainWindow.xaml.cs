@@ -30,8 +30,39 @@ namespace WPF_Review
 
         private void MainGrid_Loaded(object sender, RoutedEventArgs e)
         {
-            Output.Text = "Chao!";
-            Output.Text += "\nThis is kittyotik (me when I lie)";
+            SetPlayerName();
+            
+            //Output.Text += "\nThis is kittyotik (me when I lie)";
+            //Output.Text += player.GetInventoryItem();
+        }
+
+        private void SetPlayerName()
+        {
+            Output.Text = $"Chao! {player.PersonName} \n";
+            Output.Text += "Enter your name in the box below.";
+        }
+
+        private void Submit_Click(object sender, RoutedEventArgs e)
+        {
+            if (Input.Text != "")
+            {
+                player.PersonName = Input.Text;
+                ShowPlayerInfo();
+            }
+            else
+            {
+                Output.Text = "No name entered, ok Anon!";
+            }
+        }
+
+        private void ShowPlayerInfo()
+        {
+            Output.Text = $"{player.PersonName}";
+        }
+
+        private void Input_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
