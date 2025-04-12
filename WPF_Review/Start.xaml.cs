@@ -44,6 +44,8 @@ namespace WPF_Review
             {
                 Output.Text = "No name entered, ok Anon!";
             }
+
+            NavigationService.Navigate(new Uri("Local.xaml", UriKind.Relative));
         }
 
         private void ShowPlayerInfo()

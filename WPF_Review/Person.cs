@@ -10,6 +10,7 @@ namespace WPF_Review
     {
        public List<Item> Inventory = new List<Item>();
         public string PersonName = "Anon";
+        public int CurrentLocation = 0;
 
         public Person() 
         {

@@ -23,6 +23,7 @@ namespace WPF_Review
     public partial class MainWindow : Window
     {
         public Person player = new Person();
+        public List<Region> regions = new List<Region>();
         public MainWindow()
         {
             InitializeComponent();
@@ -32,7 +33,12 @@ namespace WPF_Review
         {
             // used once for inital load
             NavFrame.Navigate(new Start());
-            
+
+            //+regions
+            regions.Add(new Region() { regionName="City", regionDescript="Journey Begins"});
+            regions.Add(new Region() { regionName = "Void", regionDescript = "????" });
+            regions.Add(new Region() { regionName = "Coast Line", regionDescript = "The land by the ocean." });
+
             //Output.Text += "\nThis is kittyotik (me when I lie)";
             //Output.Text += player.GetInventoryItem();
         }
