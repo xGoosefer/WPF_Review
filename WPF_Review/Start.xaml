@@ -9,10 +9,10 @@
       Title="Start">
 
     <Grid x:Name="StartGrid" Loaded="StartGrid_Loaded">
-        <TextBlock x:Name="Output" HorizontalAlignment="Left" Margin="187,279,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="75" Width="287"/>
+        <TextBlock x:Name="Output" HorizontalAlignment="Left" Margin="187,279,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="75" Width="287"/>
         <TextBox x:Name="Input" HorizontalAlignment="Left" Margin="187,389,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="287" Height="21"/>
         <Button x:Name="Submit" Content="Button" HorizontalAlignment="Left" Margin="520,385,0,0" VerticalAlignment="Top" Height="25" Width="63" Click="Submit_Click"/>
-        <TextBlock x:Name="Title" HorizontalAlignment="Left" Margin="187,27,0,0" TextWrapping="Wrap" Text="Robotic Ascension!" VerticalAlignment="Top" Height="152" Width="396" FontFamily="Blackadder ITC" FontSize="48" TextAlignment="Center" Foreground="#FFCE9B2A"/>
+        <TextBlock x:Name="Title" HorizontalAlignment="Left" Margin="187,27,0,0" TextWrapping="Wrap" Text="{Binding Path=GameName}" VerticalAlignment="Top" Height="152" Width="396" FontFamily="Blackadder ITC" FontSize="48" TextAlignment="Center" Foreground="#FFCE9B2A"/>
 
     </Grid>
 </Page>
