@@ -30,6 +30,7 @@ namespace WPF_Review
         private void SetPlayerName()
         {
             Output.Text = $"Chao! {window.player.PersonName} \n";
+            
             Output.Text += "Enter your name in the box below.";
         }
 
@@ -56,6 +57,7 @@ namespace WPF_Review
         private void StartGrid_Loaded(object sender, RoutedEventArgs e)
         {
             SetPlayerName();
+            DataContext = window.game;
         }
     }
 }

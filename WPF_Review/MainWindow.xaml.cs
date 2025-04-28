@@ -24,6 +24,7 @@ namespace WPF_Review
     {
         public Person player = new Person();
         public List<Region> regions = new List<Region>();
+        public Game game = new Game();
         public MainWindow()
         {
             InitializeComponent();
