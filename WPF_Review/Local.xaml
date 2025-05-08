@@ -9,10 +9,14 @@
       Title="Local">
 
     <Grid Loaded="Grid_Loaded">
-        <TextBlock x:Name="LocalName" HorizontalAlignment="Left" Margin="28,42,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="53" Width="159"/>
-        <TextBlock x:Name="LocalDescrip" HorizontalAlignment="Left" Margin="28,114,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="54" Width="172"/>
+        <TextBlock x:Name="LocalName" HorizontalAlignment="Left" Margin="28,42,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="24" Width="159"/>
+        <TextBlock x:Name="LocalDescrip" HorizontalAlignment="Left" Margin="28,77,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="54" Width="172"/>
         <TextBlock x:Name="PlayerInfo" HorizontalAlignment="Left" Margin="614,42,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="70" Width="140"/>
         <Image x:Name="PlayerAvatar" HorizontalAlignment="Left" Height="100" Margin="614,95,0,0" VerticalAlignment="Top" Width="100" Source="/Avatar.bmp"/>
+        <TextBox x:Name="plHealth" HorizontalAlignment="Left" Margin="614,195,0,0" TextWrapping="Wrap" Text="Health" VerticalAlignment="Top" Width="120"/>
+        <ProgressBar x:Name="plHealthB" HorizontalAlignment="Left" Height="18" Margin="614,225,0,0" VerticalAlignment="Top" Width="120" Value="100"/>
+        <Button x:Name="btnAtk" Content="Attack" HorizontalAlignment="Left" Margin="614,268,0,0" VerticalAlignment="Top" Height="27" Width="50"/>
+        <Button x:Name="btnDef" Content="Defend" HorizontalAlignment="Left" Margin="684,268,0,0" VerticalAlignment="Top" Height="27" Width="50"/>
 
     </Grid>
 </Page>

@@ -36,8 +36,8 @@ namespace WPF_Review
             NavFrame.Navigate(new Start());
 
             //+regions
-            regions.Add(new Region() { regionName="City", regionDescript="Journey Begins"});
-            regions.Add(new Region() { regionName = "Void", regionDescript = "????" });
+            regions.Add(new Region() { regionName="City", regionDescript="Your journey begins. Fight your way to the Coast Line. "});
+            regions.Add(new Region() { regionName = "The Barricade", regionDescript = "One Mighty Foe Stands In Your Way." });
             regions.Add(new Region() { regionName = "Coast Line", regionDescript = "The land by the ocean." });
 
             //Output.Text += "\nThis is kittyotik (me when I lie)";

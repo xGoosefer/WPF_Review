@@ -18,9 +18,8 @@ namespace WPF_Review
 
         public Person() 
         {
-            Inventory.Add(new Item() { ItemName = "Minor Gear Part", Description = "Worth $5"});
-            Inventory.Add(new Item() { ItemName = "Small Ba", Description = "Has some street rats on it" });
-            Inventory.Add(new Item() { ItemName = "Photo", Description = "A dog with golden fur posed for this." });
+            Inventory.Add(new Item() { ItemName = "Minor Gear Part", Description = "A vauluable item."});
+           
         }
 
 
