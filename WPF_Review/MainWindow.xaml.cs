@@ -15,8 +15,8 @@ Roberto A. Ramirez
 4/11/25
 
 credits:
-[5/7/25] https://youtu.be/iGAZQLY2UvI?si=F8c-ZGh7xcXUFKiz
-
+[5/7/25] Health Bar https://youtu.be/iGAZQLY2UvI?si=F8c-ZGh7xcXUFKiz
+[5/8/25] Wait https://www.reddit.com/r/csharp/comments/ysmmvj/does_c_have_a_wait_function/
  */
 
 namespace WPF_Review
