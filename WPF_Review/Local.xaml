@@ -16,12 +16,13 @@
         <TextBox x:Name="plHealth" HorizontalAlignment="Left" Margin="614,195,0,0" TextWrapping="Wrap" Text="Health" VerticalAlignment="Top" Width="120"/>
         <ProgressBar x:Name="plHealthB" HorizontalAlignment="Left" Height="18" Margin="614,225,0,0" VerticalAlignment="Top" Width="120" Value="100"/>
         <Button x:Name="btnAtk" Content="Attack" HorizontalAlignment="Left" Margin="614,268,0,0" VerticalAlignment="Top" Height="27" Width="50" Click="btnAtk_Click"/>
-        <Button x:Name="btnDef" Content="Defend" HorizontalAlignment="Left" Margin="684,268,0,0" VerticalAlignment="Top" Height="27" Width="50"/>
+        <Button x:Name="btnDef" Content="Defend" HorizontalAlignment="Left" Margin="684,268,0,0" VerticalAlignment="Top" Height="27" Width="50" Click="btnDef_Click"/>
         <Button x:Name="btnOnw" Content="ONWARDS!" HorizontalAlignment="Left" Margin="40,175,0,0" VerticalAlignment="Top" Height="68" Width="160" FontFamily="Arial Black" FontSize="24" Click="btnOnw_Click"/>
         <TextBlock x:Name="EnemyName" HorizontalAlignment="Left" Margin="28,131,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="24" Width="159" Visibility="Hidden"/>
         <Image x:Name="EnemyAvatar" HorizontalAlignment="Left" Height="100" Margin="108,170,0,0" VerticalAlignment="Top" Width="100" Stretch="Fill" Visibility="Hidden"/>
         <TextBox x:Name="EnemyHealth" HorizontalAlignment="Left" Margin="80,282,0,0" TextWrapping="Wrap" Text="Enemy Health" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
         <ProgressBar x:Name="EnemyHealthB" HorizontalAlignment="Left" Height="18" Margin="80,314,0,0" VerticalAlignment="Top" Width="120" Foreground="#FFC31212" Visibility="Hidden"/>
+        <TextBlock x:Name="EndScrn" HorizontalAlignment="Center" Margin="0,103,0,0" TextWrapping="Wrap" Text="You Died :)" VerticalAlignment="Top" Height="122" Width="212" TextAlignment="Center" Visibility="Hidden"/>
 
     </Grid>
 </Page>

@@ -13,6 +13,10 @@ using System.Windows.Shapes;
     WPF Review
 Roberto A. Ramirez
 4/11/25
+
+credits:
+[5/7/25] https://youtu.be/iGAZQLY2UvI?si=F8c-ZGh7xcXUFKiz
+
  */
 
 namespace WPF_Review
