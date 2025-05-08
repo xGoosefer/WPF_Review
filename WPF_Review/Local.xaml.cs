@@ -45,6 +45,10 @@ namespace WPF_Review
         private void btnOnw_Click(object sender, RoutedEventArgs e)
         {
             btnOnw.Visibility = Visibility.Hidden;
+            EnemyAvatar.Visibility = Visibility.Visible;
+            EnemyHealth.Visibility = Visibility.Visible;
+            EnemyHealthB.Visibility = Visibility.Visible;
+            EnemyName.Visibility = Visibility.Visible;
         }
 
        
