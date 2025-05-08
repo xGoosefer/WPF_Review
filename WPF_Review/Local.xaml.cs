@@ -40,17 +40,45 @@ namespace WPF_Review
       //      PlayerAvatar.Source = new BitmapImage(new Uri(window.player.AvatarIconLocal));
             //if stored as bitmap
             PlayerAvatar.Source = window.player.AvatarIcon;
+            //EnemyAvatar.Source = window.enemy.EnemyIcon;
         }
 
         private void btnOnw_Click(object sender, RoutedEventArgs e)
         {
-            btnOnw.Visibility = Visibility.Hidden;
+            btnOnw.Visibility = Visibility.Collapsed;
             EnemyAvatar.Visibility = Visibility.Visible;
             EnemyHealth.Visibility = Visibility.Visible;
             EnemyHealthB.Visibility = Visibility.Visible;
             EnemyName.Visibility = Visibility.Visible;
+            window.enemy.SelectEnemy();
+            EnemyAvatar.Source = window.enemy.EnemyIcon;
+
+            if (window.enemy.EnemyStats() == 1)
+            {
+                EnemyName.Text = "Cor";
+                EnemyHealthB.Maximum = 20;
+                EnemyHealthB.Value = 20;
+            }
+            else if (window.enemy.EnemyStats() == 2)
+            {
+                EnemyName.Text = "Verz";
+                EnemyHealthB.Maximum = 25;
+                EnemyHealthB.Value = 25;
+            }
+            else 
+            {
+                EnemyName.Text = "Eiy";
+                EnemyHealthB.Maximum = 18;
+                EnemyHealthB.Value = 18;
+            }
+            
         }
 
-       
+        private void btnAtk_Click(object sender, RoutedEventArgs e)
+        {
+            int atk;
+            atk = MainWindow.GetRandomIntenger(3, 8);
+            EnemyHealthB.Value -= atk;
+        }
     }
 }

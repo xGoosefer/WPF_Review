@@ -10,10 +10,26 @@
 
   <ItemGroup>
     <None Remove="Avatar.bmp" />
+    <None Remove="Boss.bmp" />
+    <None Remove="Cor.bmp" />
+    <None Remove="Eiy.bmp" />
+    <None Remove="Verz.bmp" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="Avatar.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Boss.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Cor.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Eiy.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Verz.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

@@ -25,6 +25,10 @@ namespace WPF_Review
         public Person player = new Person();
         public List<Region> regions = new List<Region>();
         public Game game = new Game();
+        public Enemy enemy = new Enemy();
+        public static Random RandomSelect = new Random();
+        public static int GetRandomIntenger(int max) => RandomSelect.Next(max);
+        public static int GetRandomIntenger(int min, int max) => RandomSelect.Next(min, max);
         public MainWindow()
         {
             InitializeComponent();
