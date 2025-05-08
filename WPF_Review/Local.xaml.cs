@@ -41,5 +41,10 @@ namespace WPF_Review
             //if stored as bitmap
             PlayerAvatar.Source = window.player.AvatarIcon;
         }
+
+        private void btnOnw_Click(object sender, RoutedEventArgs e)
+        {
+            btnOnw.Visibility = Visibility.Hidden;
+        }
     }
 }

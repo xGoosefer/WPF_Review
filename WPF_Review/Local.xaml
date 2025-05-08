@@ -17,6 +17,7 @@
         <ProgressBar x:Name="plHealthB" HorizontalAlignment="Left" Height="18" Margin="614,225,0,0" VerticalAlignment="Top" Width="120" Value="100"/>
         <Button x:Name="btnAtk" Content="Attack" HorizontalAlignment="Left" Margin="614,268,0,0" VerticalAlignment="Top" Height="27" Width="50"/>
         <Button x:Name="btnDef" Content="Defend" HorizontalAlignment="Left" Margin="684,268,0,0" VerticalAlignment="Top" Height="27" Width="50"/>
+        <Button x:Name="btnOnw" Content="ONWARDS!" HorizontalAlignment="Left" Margin="40,175,0,0" VerticalAlignment="Top" Height="68" Width="160" FontFamily="Arial Black" FontSize="24" Click="btnOnw_Click"/>
 
     </Grid>
 </Page>
